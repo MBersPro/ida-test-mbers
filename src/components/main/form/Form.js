@@ -5,8 +5,10 @@ import {
   input,
   textarea,
   notActiveBtn,
+  activeBtn,
   circle,
   divCircle,
+  validation,
 } from "./Form.module.css";
 
 const initialState = {
@@ -14,11 +16,13 @@ const initialState = {
   description: "",
   link: "",
   price: "",
-  correctInput: "true",
 };
 
-const Form = ({addProduct}) => {
+const Form = ({ addProduct }) => {
   const [state, setState] = useState({ ...initialState });
+  const [nameCheck, setnameCheck] = useState(false);
+  const [linkCheck, setlinkCheck] = useState(false);
+  const [priceCheck, setpriceCheck] = useState(false);
 
   const onInputChange = (e) => {
     const { value, name } = e.target;
@@ -29,7 +33,44 @@ const Form = ({addProduct}) => {
     e.preventDefault();
     addProduct(state);
     setState({ ...initialState });
-  }
+  };
+
+  const onBlurFunc = (e) => {
+    if (!e.target.value) {
+      switch (e.target.name) {
+        case "name":
+          setnameCheck(true);
+          break;
+        case "link":
+          setlinkCheck(true);
+          break;
+        case "price":
+          setpriceCheck(true);
+          break;
+      }
+    }
+    if (e.target.value) {
+      switch (e.target.name) {
+        case "name":
+          setnameCheck(false);
+          break;
+        case "link":
+          setlinkCheck(false);
+          break;
+        case "price":
+          setpriceCheck(false);
+          break;
+      }
+    }
+  };
+
+  const buttonValidation = () => {
+    if (state.name && state.link && state.price) {
+      return false;
+    } else {
+      return true;
+    }
+  };
 
   return (
     <>
@@ -45,8 +86,9 @@ const Form = ({addProduct}) => {
             name="name"
             value={state.name}
             onChange={onInputChange}
+            onBlur={(e) => onBlurFunc(e)}
           />
-          {}
+          {nameCheck && <p className={validation}>Поле является обязтельным</p>}
         </label>
         <label className={label}>
           Описание товара
@@ -69,7 +111,9 @@ const Form = ({addProduct}) => {
             name="link"
             value={state.link}
             onChange={onInputChange}
+            onBlur={(e) => onBlurFunc(e)}
           />
+          {linkCheck && <p className={validation}>Поле является обязтельным</p>}
         </label>
         <label className={label}>
           <div className={divCircle}>
@@ -82,9 +126,17 @@ const Form = ({addProduct}) => {
             name="price"
             value={state.price}
             onChange={onInputChange}
+            onBlur={(e) => onBlurFunc(e)}
           />
+          {priceCheck && (
+            <p className={validation}>Поле является обязательным</p>
+          )}
         </label>
-        <button type="submit" className={notActiveBtn}>
+        <button
+          disabled={buttonValidation()}
+          type="submit"
+          className={buttonValidation() ? notActiveBtn : activeBtn}
+        >
           Добавить товар
         </button>
       </form>
