@@ -1,11 +1,20 @@
 import React, { useState } from "react";
-import { label, form, input, textarea, btnForm, circle, divCircle} from "./Form.module.css";
+import {
+  label,
+  form,
+  input,
+  textarea,
+  notActiveBtn,
+  circle,
+  divCircle,
+} from "./Form.module.css";
 
 const initialState = {
   name: "",
   description: "",
   link: "",
   price: "",
+  correctInput: "true",
 };
 
 const Form = ({addProduct}) => {
@@ -26,14 +35,18 @@ const Form = ({addProduct}) => {
     <>
       <form className={form} onSubmit={onSubmit}>
         <label className={label}>
-          <div className={divCircle}>Наименование товара<div className={circle}></div></div>
-          <input className={input}
+          <div className={divCircle}>
+            Наименование товара<div className={circle}></div>
+          </div>
+          <input
+            className={input}
             type="text"
             placeholder="Введите наименование товара"
             name="name"
             value={state.name}
             onChange={onInputChange}
           />
+          {}
         </label>
         <label className={label}>
           Описание товара
@@ -46,7 +59,9 @@ const Form = ({addProduct}) => {
           ></textarea>
         </label>
         <label className={label}>
-          <div className={divCircle}>Ссылка на изображение товара<div className={circle}></div></div>
+          <div className={divCircle}>
+            Ссылка на изображение товара<div className={circle}></div>
+          </div>
           <input
             className={input}
             type="url"
@@ -57,7 +72,9 @@ const Form = ({addProduct}) => {
           />
         </label>
         <label className={label}>
-          <div className={divCircle}>Цена товара<div className={circle}></div></div>
+          <div className={divCircle}>
+            Цена товара<div className={circle}></div>
+          </div>
           <input
             className={input}
             type="number"
@@ -67,7 +84,9 @@ const Form = ({addProduct}) => {
             onChange={onInputChange}
           />
         </label>
-        <button type="submit" className={btnForm}>Добавить товар</button>
+        <button type="submit" className={notActiveBtn}>
+          Добавить товар
+        </button>
       </form>
     </>
   );

@@ -5,7 +5,7 @@ const Header = () => {
     <header className={navigation_container}>
       <h3 className={navigation_h3}>Добавление товара</h3>
       <button className={navigation_button} type="button">
-        По умолчанию<span>&or;</span>
+        По умолчанию <span>&or;</span>
       </button>
     </header>
   );

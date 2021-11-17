@@ -10,9 +10,12 @@
     width: 332px;
     height: 200px;
     border-radius: 4px 4px 0px 0px;
+    display: inline-block;
+    overflow: hidden;
 }
 .divProductP{
-    padding: 16px 16px 24px 16px;
+    padding: 16px 16px 16px 16px;
+    box-sizing: border-box;
     
     
 }
