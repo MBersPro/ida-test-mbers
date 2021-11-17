@@ -1,0 +1,16 @@
+.ulProducts{
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 16px;
+    margin-bottom: 0;
+    margin-right: 0px;
+
+}
+.liProducts:not(:last-child){
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
