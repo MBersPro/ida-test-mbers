@@ -39,8 +39,7 @@ const Main = () => {
     setProducts((prev) => [...prev, { ...product, id }]);
   };
 
-  const deleteProduct = (e) => {
-    const { id } = e.target;
+  const deleteProduct = (id) => {
     setProducts((prev) => [...prev.filter((product) => product.id !== id)]);
   };
 

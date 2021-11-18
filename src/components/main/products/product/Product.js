@@ -8,7 +8,13 @@ import {
   divProductP,
   deliteBtn,
 } from "./product.module.css";
-const Product = ({ product, deliteProduct }) => {
+
+const Product = ({ product, deleteProduct }) => {
+
+  const onDelete = (id) => {
+    deleteProduct(id)
+  }
+
   return (
     <div className={divProduct}>
       <img src={product.link} alt={product.name} className={imgProduct} />
@@ -23,7 +29,7 @@ const Product = ({ product, deliteProduct }) => {
         className={deliteBtn}
         type="button"
         id={product.id}
-        onClick={deliteProduct}
+        onClick={() => onDelete(product.id)}
       >
         X
       </button>
