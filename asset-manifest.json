@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ida-test-mbers/static/css/main.2d257dd6.chunk.css",
-    "main.js": "/ida-test-mbers/static/js/main.af7163b0.chunk.js",
-    "main.js.map": "/ida-test-mbers/static/js/main.af7163b0.chunk.js.map",
+    "main.css": "/ida-test-mbers/static/css/main.2d9a9375.chunk.css",
+    "main.js": "/ida-test-mbers/static/js/main.dc272c7a.chunk.js",
+    "main.js.map": "/ida-test-mbers/static/js/main.dc272c7a.chunk.js.map",
     "runtime-main.js": "/ida-test-mbers/static/js/runtime-main.37e6f903.js",
     "runtime-main.js.map": "/ida-test-mbers/static/js/runtime-main.37e6f903.js.map",
     "static/js/2.f49b5c7a.chunk.js": "/ida-test-mbers/static/js/2.f49b5c7a.chunk.js",
     "static/js/2.f49b5c7a.chunk.js.map": "/ida-test-mbers/static/js/2.f49b5c7a.chunk.js.map",
     "index.html": "/ida-test-mbers/index.html",
-    "static/css/main.2d257dd6.chunk.css.map": "/ida-test-mbers/static/css/main.2d257dd6.chunk.css.map",
+    "static/css/main.2d9a9375.chunk.css.map": "/ida-test-mbers/static/css/main.2d9a9375.chunk.css.map",
     "static/js/2.f49b5c7a.chunk.js.LICENSE.txt": "/ida-test-mbers/static/js/2.f49b5c7a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.37e6f903.js",
     "static/js/2.f49b5c7a.chunk.js",
-    "static/css/main.2d257dd6.chunk.css",
-    "static/js/main.af7163b0.chunk.js"
+    "static/css/main.2d9a9375.chunk.css",
+    "static/js/main.dc272c7a.chunk.js"
   ]
 }
