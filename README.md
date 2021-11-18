@@ -1,3 +1,12 @@
+Пошаговая инструкция по запуску проекта на локальной машине:
+1. В терминале пропишите команду: "git clone https://github.com/MBersPro/ida-test-mbers.git"
+2. Скопируйте в отдельное место две папки "public" и "src"
+3. Удалите все остальные файлы из репозитория, кроме папки .git
+4. Откройте терминал в склонированном репозитории и пропишите команду "npx create-react-app ." (Дождитесь полной загрузки, пока не увидите happy hacking)
+5. Откройте репозиторий и замените папку "public" и "src" на заранее скопированные.
+6. Откройте проект и пропишите в терминале "npm i uuid"
+7. Пропишите в терминале команду "npm start"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
