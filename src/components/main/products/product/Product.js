@@ -6,6 +6,7 @@ import {
   pProduct3,
   imgProduct,
   divProductP,
+  deliteBtn,
 } from "./product.module.css";
 const Product = ({ product, deliteProduct }) => {
   return (
@@ -18,7 +19,14 @@ const Product = ({ product, deliteProduct }) => {
           <span>{product.price}</span> <span>руб.</span>
         </p>
       </div>
-      <button type="button" id={product.id} onClick={deliteProduct}></button>
+      <button
+        className={deliteBtn}
+        type="button"
+        id={product.id}
+        onClick={deliteProduct}
+      >
+        X
+      </button>
     </div>
   );
 };

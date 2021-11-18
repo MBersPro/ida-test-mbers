@@ -1,53 +1,62 @@
-.divProduct{
-    height: 423px;
-    background: #FFFEFB;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
-    border-radius: 4px;
-    max-width: 332px;
-    
+.divProduct {
+  height: 423px;
+  background: #fffefb;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04),
+    0px 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  max-width: 332px;
+  position: relative;
 }
-.imgProduct{
-    width: 332px;
-    height: 200px;
-    border-radius: 4px 4px 0px 0px;
-    display: inline-block;
-    overflow: hidden;
+.imgProduct {
+  width: 332px;
+  height: 200px;
+  border-radius: 4px 4px 0px 0px;
+  display: inline-block;
+  overflow: hidden;
 }
-.divProductP{
-    padding: 16px 16px 16px 16px;
-    box-sizing: border-box;
-    
-    
+.divProductP {
+  padding: 16px 16px 16px 16px;
+  box-sizing: border-box;
 }
-.pProduct1{
-    max-width: 300px;
-    margin-bottom: 16px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    color: #3F3F3F;
-    word-wrap: break-word;
+.pProduct1 {
+  max-width: 300px;
+  margin-bottom: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #3f3f3f;
+  word-wrap: break-word;
 }
-.pProduct2{
-    max-width: 300px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    word-wrap: break-word;
-    color: #3F3F3F;
-    margin-bottom: 32px;
-
+.pProduct2 {
+  max-width: 300px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  word-wrap: break-word;
+  color: #3f3f3f;
+  margin-bottom: 32px;
 }
-.pProduct3{
-    max-width: 300px;
-    font-family: "Source Sans Pro", sans-serif; 
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    color: #3F3F3F;
-    word-wrap: break-word;
+.pProduct3 {
+  max-width: 300px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3f3f3f;
+  word-wrap: break-word;
 }
-p{
-    max-width: 50%;
+p {
+  max-width: 50%;
+}
+.deliteBtn {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: #FF8484;
+  border: none;
+  color: white;
 }

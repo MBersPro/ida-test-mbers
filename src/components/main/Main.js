@@ -13,7 +13,15 @@ const defaultChooser = () => {
         description:
           "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк.",
         link: "https://news.fidller.com/wp-content/uploads/2021/05/Polaroid-Go_0.jpeg",
-        price: 100500,
+        price: "100500",
+      },
+      {
+        id: "id-2",
+        name: "Ещё одно наименование",
+        description:
+          "Ещё одно описание товара. Больше. Нужно больше. Еще большееееееееееееееееееееее!!!!!!!!!!!!",
+        link: "https://news.fidller.com/wp-content/uploads/2021/05/Polaroid-Go_0.jpeg",
+        price: "9482304823",
       },
     ]
   );
@@ -24,7 +32,6 @@ const Main = () => {
 
   useEffect(() => {
     localStorage.setItem("products", JSON.stringify(products));
-    console.log(products)
   }, [products]);
 
   const addProduct = (product) => {
@@ -35,7 +42,6 @@ const Main = () => {
   const deleteProduct = (e) => {
     const { id } = e.target;
     setProducts((prev) => [...prev.filter((product) => product.id !== id)]);
-    console.log(products);
   };
 
   return (
