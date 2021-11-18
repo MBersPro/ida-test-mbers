@@ -1,9 +1,9 @@
 import React from "react";
 import {
   divProduct,
-  pProduct1,
-  pProduct2,
-  pProduct3,
+  name,
+  description,
+  link,
   imgProduct,
   divProductP,
   deliteBtn,
@@ -19,9 +19,9 @@ const Product = ({ product, deleteProduct }) => {
     <div className={divProduct}>
       <img src={product.link} alt={product.name} className={imgProduct} />
       <div className={divProductP}>
-        <p className={pProduct1}>{product.name}</p>
-        <p className={pProduct2}>{product.description}</p>
-        <p className={pProduct3}>
+        <p className={name}>{product.name}</p>
+        <p className={description}>{product.description}</p>
+        <p className={link}>
           <span>{product.price}</span> <span>руб.</span>
         </p>
       </div>
